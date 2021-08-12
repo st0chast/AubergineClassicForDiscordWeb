@@ -1,0 +1,85 @@
+/* User CSS for discord.com/app inspired by the Aubergine Classic theme from Slack */
+/* To be used with the light theme, and that with sidebar theme option turned on */
+
+/* I. Aubergine Classic-y colours *//*#region*/
+.theme-dark {
+    --background-primary: #4E394B;
+    --background-secondary: #4E394B;
+    --background-secondary-alt: #4E394B;
+    --background-tertiary: #3F313C;
+    --background-accent: #4E394B;
+    --background-floating: #3F313C;
+}
+
+.container-1r6BKw {
+    /* The channel name panel in the channel view */
+    background-color: #3F313C !important;
+}
+
+.modeSelected-346R90 {
+    /* Greenish selection */
+    background-color: #4D9689 !important;
+}
+/*#endregion*/
+
+/* II. Relocating the Guilds Sidebar*//*#region*/
+/* See section III for stealth parameters */
+.wrapper-3NnKdC {
+    left: 95%;
+    background-color: white;
+    height: 93%;
+    top: 7%;
+}
+
+.base-3dtUhz {
+    right: 5%;
+}
+/*#endregion*/
+
+/* III. Stealth for too obvious elements *//*#region*/
+/* Elements that break Slack-resemblance gain transparency until hovered */
+/* III.a Banner */
+/* TODO: Hover, needs a purely CSS solution */
+.bannerImage-3KhIJ6 {
+    opacity: 0.1;
+}
+
+/* III.b Guilds list */
+.scroller-1Bvpku {
+    opacity: 0.1;
+}
+
+.scroller-1Bvpku:hover {
+    opacity: 1;
+}
+
+/* III.c User status panel */
+.container-3baos1 {
+    opacity: 0.1;
+}
+
+.container-3baos1:hover {
+    opacity: 1;
+}
+
+/* III.d The search field */
+.search-36MZv- {
+    opacity: 0.1;
+}
+
+.search-36MZv-:hover {
+    opacity: 1;
+}
+/*#endregion*/
+
+/* X. Smol hacks *//*#region*/
+.title-29uC1r {
+    /* Font colour for the channel name in the channel view */
+    color: white;
+}
+
+.theme-light .children-19S4PO:after {
+    /* Weird gradient thing, leftover from the light theme */
+    display: none;
+}
+/*#endregion*/
